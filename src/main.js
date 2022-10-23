@@ -90,7 +90,7 @@ cardHolder.addEventListener("input", () => {
 
 securityCodeMasked.on("accept", () => {
   const cardType = cardNumberMasked.masked.currentMask.cardtype
-  setCardType()
+  setCardType(cardType)
   updateSecurityCode(securityCodeMasked.value)
 })
 
